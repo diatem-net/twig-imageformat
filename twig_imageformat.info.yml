@@ -1,0 +1,7 @@
+name: Twig Image Format
+type: module
+description: 'Return formated image by style.'
+package: Diatem
+core_version_requirement: ^8.8 || ^9
+interface translation project: twig_imageformat
+interface translation server pattern: modules/custom/twig_imageformat/translations/twig_imageformat-%version.%language.po

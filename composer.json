@@ -1,0 +1,17 @@
+{
+    "name": "diatem-net/twig_imageformat",
+    "description": "Return formated image by style.",
+    "type": "drupal-module",
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Samuel Marchal",
+            "role": "smarchal@diatem.net"
+        },
+        {
+            "name": "Jean-Luc Fritz",
+            "role": "jlfritz@diatem.net"
+        }
+    ],
+    "minimum-stability": "dev"
+}

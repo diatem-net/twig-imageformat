@@ -1,0 +1,6 @@
+services:
+  twig_imageformat.twig.ImageFormat:
+    arguments: ['@renderer']
+    class: Drupal\twig_imageformat\TwigExtension\ImageFormat
+    tags:
+      - { name: twig.extension }
