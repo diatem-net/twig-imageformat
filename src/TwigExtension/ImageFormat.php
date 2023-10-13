@@ -6,11 +6,12 @@ use Drupal\node\Entity\Node;
 use Drupal\taxonomy\Entity\Term;
 use Drupal\image\Entity\ImageStyle;
 use Drupal\file\Entity\File;
-
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFunction;
 /**
  * Add a imageformat() && termImageformat() function to Twig
  */
-class ImageFormat extends \Twig_Extension
+class ImageFormat extends AbstractExtension 
 {
 
     /**
@@ -27,12 +28,12 @@ class ImageFormat extends \Twig_Extension
     public function getFunctions()
     {
         return array(
-            new \Twig_SimpleFunction(
+            new TwigFunction(
               'imageformat',
               array($this, 'imageformat'),
               array('is_safe' => array('html'))
             ),
-            new \Twig_SimpleFunction(
+            new TwigFunction(
               'termImageformat',
               array($this, 'termImageformat'),
               array('is_safe' => array('html'))
