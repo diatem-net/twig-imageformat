@@ -60,7 +60,7 @@ class ImageFormat extends AbstractExtension
           }
         }
       }
-      return $derivativeUri ? file_create_url($derivativeUri) : null;
+      return $derivativeUri ? \Drupal::service('file_url_generator')->generateAbsoluteString($derivativeUri) : null;
     }
 
 
@@ -85,7 +85,7 @@ class ImageFormat extends AbstractExtension
           }
         }
       }
-      return $derivativeUri ? file_create_url($derivativeUri) : null;
+      return $derivativeUri ? \Drupal::service('file_url_generator')->generateAbsoluteString($derivativeUri) : null;
     }
 
 }
